@@ -24,7 +24,6 @@ public class WinMineBtn extends JButton implements ActionListener {
         this.addActionListener(this);
     }
 
-    @Override
     public void actionPerformed(ActionEvent e) {
         //To change body of implemented methods use File | Settings | File Templates.
         System.out.println(111111);
