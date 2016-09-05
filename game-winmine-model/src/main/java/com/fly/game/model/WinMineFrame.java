@@ -31,7 +31,8 @@ public class WinMineFrame extends JFrame {
 
     private void initComponents() {
         contentPane = getContentPane();
-        panel = new JPanel(null);
+//        panel = new JPanel(null);
+        panel = new WinMinePanel();
         panel.setBackground(Color.white);
 
         menu = new JMenu("menu");
@@ -46,7 +47,16 @@ public class WinMineFrame extends JFrame {
         menuBar.add(menu);
         this.setJMenuBar(menuBar);
 
+        WinMineBtn winMineBtn = new WinMineBtn();
+        winMineBtn.setBounds(16, 0, 16, 16);
         panel.add(new WinMineBtn());
+        panel.add(winMineBtn);
+
+        WinMineLabel label = new WinMineLabel("2");
+        label.setBounds(16, 0, 16, 16);
+
+        panel.add(new WinMineLabel("1"));
+        panel.add(label);
 
         contentPane.add(panel);
 

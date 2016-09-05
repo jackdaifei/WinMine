@@ -13,5 +13,12 @@
     <packaging>jar</packaging>
     <name>game-winmine-model</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
