@@ -15,7 +15,7 @@ public class WinMineLabel extends JLabel {
         this.setSize(16, 16);
         this.setHorizontalAlignment(SwingConstants.CENTER);
         this.setVerticalAlignment(SwingConstants.CENTER);
-
+        this.setFont(new Font("楷体", Font.BOLD, 15));
     }
 
     public WinMineLabel(String text) {

@@ -21,13 +21,14 @@ public class WinMineBtn extends JButton implements MouseListener {
         this.setBackground(new Color(0xc0c0c0));
         this.setBorder(BorderFactory.createRaisedBevelBorder());
 
+
         this.addMouseListener(this);
     }
 
 
     public void mouseClicked(MouseEvent e) {
         this.setVisible(false);
-        this.getParent().repaint();
+//        this.getParent().repaint();
     }
 
     public void mousePressed(MouseEvent e) {
